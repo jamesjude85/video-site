@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch Video</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎬 Now Playing</h1>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </header>
+
+  <main>
+    <div class="player-container">
+      <video id="mainPlayer" controls></video>
+      <h2 id="videoTitle"></h2>
+      <p id="videoDescription"></p>
+    </div>
+
+    <div class="episode-section">
+      <h3>More Videos</h3>
+      <div id="episodeList" class="episode-list"></div>
+    </div>
+  </main>
+
+  <script src="player.js"></script>
+</body>
+</html>

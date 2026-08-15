@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Anime Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <h1>🎬 My Anime Site</h1>
+  <div class="header-links">
+    <a href="history.html" class="back-link">History</a>
+    <a href="admin.html" class="back-link">Admin</a>
+    <a href="login.html" class="back-link">Login</a>
+  </div>
+</header>
+
+  <main>
+    <input type="text" id="searchBox" placeholder="Search shows..." onkeyup="searchShows()">
+
+    <div id="showGrid" class="video-grid">
+      <!-- Shows will be added by JavaScript -->
+    </div>
+  </main>
+<script src="checkAuth.js"></script>
+<script src="script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

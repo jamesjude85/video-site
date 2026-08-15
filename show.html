@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Show Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎬 My Anime Site</h1>
+    <div class="header-links">
+      <a href="index.html" class="back-link">← Back to Home</a>
+      <a href="login.html" class="back-link">Login</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="show-container">
+      <img id="showThumbnail" class="show-thumbnail" src="" alt="">
+      <h2 id="showTitle"></h2>
+      <p id="showDescription"></p>
+    </div>
+
+    <div class="episode-section">
+      <h3>Episodes</h3>
+      <div id="episodeList" class="episode-list"></div>
+    </div>
+
+    <div class="comments-section">
+      <h3>Comments</h3>
+      <div id="commentForm">
+        <textarea id="commentText" rows="3" placeholder="Write a comment..."></textarea>
+        <button onclick="addComment()">Post Comment</button>
+        <p id="commentMessage"></p>
+      </div>
+      <div id="commentsList"></div>
+    </div>
+  </main>
+
+  <script src="checkAuth.js"></script>
+  <script src="show.js"></script>
+</body>
+</html>

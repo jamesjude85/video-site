@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch Episode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <h1>🎬 Now Watching</h1>
+  <div class="header-links">
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <a href="login.html" class="back-link">Login</a>
+  </div>
+</header>
+
+  <main>
+    <div class="player-container">
+      <video id="mainPlayer" controls></video>
+      <h2 id="episodeTitle"></h2>
+      <p id="showName"></p>
+    </div>
+
+    <div class="episode-section">
+      <h3>Other Episodes</h3>
+      <div id="otherEpisodes" class="episode-list"></div>
+    </div>
+  </main>
+<script src="checkAuth.js"></script>
+<script src="watch.js"></script>
+</body>
+</html>
